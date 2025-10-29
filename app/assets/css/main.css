@@ -1,0 +1,69 @@
+@import 'tailwindcss';
+@import '@nuxt/ui';
+
+:root {
+  --ui-primary: var(--ui-color-primary-400);
+  --ui-secondary: var(--ui-color-secondary-300);
+  --ui-tertiary: var(--ui-color-tertiary-500);
+  --ui-accent: var(--ui-color-accent-950);
+  --ui-success: var(--ui-color-success-500);
+  --ui-info: var(--ui-color-info-500);
+  --ui-warning: var(--ui-color-warning-500);
+  --ui-error: var(--ui-color-error-500);
+}
+
+@theme static {
+  --font-sans: Poppins, 'DM Sans', Outfit, sans-serif;
+
+  /* Accent Color */
+  --color-midnight-50: #ecf8ff;
+  --color-midnight-100: #d4efff;
+  --color-midnight-200: #b3e4ff;
+  --color-midnight-300: #7ed5ff;
+  --color-midnight-400: #42baff;
+  --color-midnight-500: #1797ff;
+  --color-midnight-600: #0076ff;
+  --color-midnight-700: #005efc;
+  --color-midnight-800: #024bcb;
+  --color-midnight-900: #09439f;
+  --color-midnight-950: #071a3c;
+
+  /* Secondary */
+  --color-cornflower-50: #f3f7fc;
+  --color-cornflower-100: #e6f0f8;
+  --color-cornflower-200: #c8dfef;
+  --color-cornflower-300: #9fc9e4;
+  --color-cornflower-400: #60a6d0;
+  --color-cornflower-500: #3b8bbc;
+  --color-cornflower-600: #2b6f9e;
+  --color-cornflower-700: #245a80;
+  --color-cornflower-800: #214c6b;
+  --color-cornflower-900: #20415a;
+  --color-cornflower-950: #15293c;
+
+  /* Tertiary */
+  --color-trinidad-50: #fdf6ef;
+  --color-trinidad-100: #fbe9d9;
+  --color-trinidad-200: #f7cfb1;
+  --color-trinidad-300: #f1af80;
+  --color-trinidad-400: #eb844c;
+  --color-trinidad-500: #e56024;
+  --color-trinidad-600: #d74c1f;
+  --color-trinidad-700: #b2381c;
+  --color-trinidad-800: #8e2f1e;
+  --color-trinidad-900: #73281b;
+  --color-trinidad-950: #3e120c;
+
+  /* Primary Color */
+  --color-golden-sand-50: #fffbeb;
+  --color-golden-sand-100: #fdf1c8;
+  --color-golden-sand-200: #fade79;
+  --color-golden-sand-300: #f9ce50;
+  --color-golden-sand-400: #f7b928;
+  --color-golden-sand-500: #f09910;
+  --color-golden-sand-600: #d5740a;
+  --color-golden-sand-700: #b1500c;
+  --color-golden-sand-800: #8f3f11;
+  --color-golden-sand-900: #763411;
+  --color-golden-sand-950: #441904;
+}
