@@ -56,7 +56,7 @@ const items = computed<NavigationMenuItem[]>(() => [
   },
   {
     label: 'News',
-    to: '/news',
+    to: '/news/',
     active: route.path.startsWith('/news'),
     // target: '_blank',
   },
@@ -66,6 +66,12 @@ const items = computed<NavigationMenuItem[]>(() => [
     active: route.path.startsWith('/contact-us'),
     // target: '_blank',
   },
+  // {
+  //   label: 'Sign In',
+  //   icon: 'i-lucide-book-open',
+  //   to: '/auth/signin',
+  //   active: route.path.startsWith('/auth/signin'),
+  // },
 ])
 </script>
 
@@ -81,6 +87,13 @@ const items = computed<NavigationMenuItem[]>(() => [
 
     <template #right>
       <UNavigationMenu :items="items" variant="link" class="hidden lg:block" />
+
+      <UButton
+        label="Sign In"
+        to="/auth/signin"
+        variant="subtle"
+        class="hidden lg:block"
+      />
       <UColorModeButton />
     </template>
 

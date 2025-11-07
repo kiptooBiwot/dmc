@@ -1,5 +1,6 @@
 <template>
-  <UApp>
+  <UApp :toaster="{ expand: false }">
+    <NuxtLoadingIndicator />
     <div class="bg-[#f2f2ed] dark:bg-transparent min-h-screen">
       <NuxtLayout>
         <NuxtPage />

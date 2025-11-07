@@ -28,7 +28,7 @@ const services = [
   <section class="py-16 bg-gray-50">
     <div class="max-w-6xl mx-auto text-center mb-12">
       <h2 class="text-lg font-medium text-primary mb-2">Our Services</h2>
-      <h3 class="text-4xl font-semibold text-blue-900">
+      <h3 class="text-4xl font-semibold">
         Diversifying our operations<br />
         through the years
       </h3>
@@ -53,7 +53,7 @@ const services = [
       >
         <!-- Background accent animation -->
         <div
-          class="absolute inset-0 bg-secondary transform -translate-y-full group-hover:translate-y-0 transition-transform duration-500 ease-in-out"
+          class="absolute inset-0 bg-primary-600 transform -translate-y-full group-hover:translate-y-0 transition-transform duration-500 ease-in-out"
         ></div>
 
         <!-- Card content -->
