@@ -28,10 +28,11 @@ const props = withDefaults(
         : {}
     "
   >
+    <!-- src="/images/dmc-logo.jpg" -->
     <img
-      src="/images/dmc-logo.jpg"
-      alt="Logo"
-      class="object-contain w-full h-full"
+      src="/images/dmc-logo-no-bg.png"
+      alt="DMC Logo"
+      class="object-contain w-[150px] h-[70px]"
     />
   </div>
 </template>

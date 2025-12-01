@@ -5,7 +5,7 @@ export default defineAppConfig({
       primary: 'golden-sand',
       secondary: 'cornflower',
       tertiary: 'trinidad',
-      accent: 'midnight',
+      accent: 'golden',
     },
     button: {
       default: {

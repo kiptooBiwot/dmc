@@ -172,35 +172,16 @@ const contacts = ref([
           >
             <UTextarea v-model="state.message" :rows="6" class="w-full" />
           </UFormField>
-
-          <!-- Submit Button -->
-          <!-- <UButton type="submit" block :loading="pending" :disabled="pending">
-            Submit
-          </UButton> -->
           <UButton type="submit" block size="xl">Send Message</UButton>
         </UForm>
       </div>
     </div>
-    <!-- </div> -->
-    <!-- <div class="w-3/4 mx-auto rounded-2xl shadow-xl h-auto p-10">
-        <UForm></UForm>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio
-          reprehenderit ipsum, suscipit inventore nulla, dolor optio sunt sed
-          assumenda quos quis vel. Assumenda, in rem suscipit quo quae sed vitae
-          voluptatem sequi saepe laudantium consectetur quos! Consectetur
-          praesentium, deleniti commodi, similique consequuntur debitis quas
-          sunt neque aspernatur quasi at rem, voluptatum vero dolore! Voluptate
-          exercitationem velit assumenda asperiores reprehenderit suscipit error
-          quos delectus cumque ab voluptatibus, deleniti repudiandae reiciendis
-          officiis sit, vero blanditiis dolor molestias doloribus. Voluptatibus
-          veritatis iure optio placeat et reprehenderit ullam repudiandae
-          corrupti recusandae cupiditate illum dignissimos, at blanditiis eaque
-          nemo ex hic ipsa accusantium deserunt iste!
-        </p>
-      </div> -->
-    <!-- </div> -->
   </UContainer>
+  <div class="max-w-8xl mx-auto">
+    <!-- <ClientOnly> -->
+    <ContactLocationMap />
+    <!-- </ClientOnly> -->
+  </div>
 </template>
 
 <style scoped></style>
