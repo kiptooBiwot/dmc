@@ -7,15 +7,19 @@ const columns = [
     children: [
       {
         label: 'Home',
+        to: '/',
       },
       {
         label: 'Our Company',
+        to: '/about-us',
       },
       {
         label: 'Projects',
+        to: '/projects',
       },
       {
         label: 'Out Team',
+        to: '/our-team',
       },
     ],
   },
@@ -24,9 +28,11 @@ const columns = [
     children: [
       {
         label: 'About Us',
+        to: '/about-us',
       },
       {
         label: 'Contact Us',
+        to: '/contact-us',
       },
       // {
       //   label: 'Jobs',
@@ -41,12 +47,15 @@ const columns = [
     children: [
       {
         label: 'Manufacturing',
+        to: '/dmc/manufacturing',
       },
       {
         label: 'Finance & Banking',
+        to: '/dmc/finance-banking',
       },
       {
         label: 'Real Estate',
+        to: '/dmc/real-estate',
       },
       // {
       //   label: 'Blog',
@@ -67,7 +76,9 @@ const columns = [
       <UContainer>
         <UFooterColumns :columns="columns">
           <template #right>
-            <DmcLogo responsive :height="200" :width="300" />
+            <NuxtLink to="/" class="cursor-pointer">
+              <DmcLogo responsive :height="200" :width="300" />
+            </NuxtLink>
             <!-- <DmcLogo :width="300" :height="200" class="" /> -->
           </template>
         </UFooterColumns>
@@ -76,7 +87,7 @@ const columns = [
 
     <template #left>
       <p class="text-sm text-white">
-        DMC GROUP LIMITED • © {{ new Date().getFullYear() }} | A product of
+        DMC GROUP LIMITED • © {{ new Date().getFullYear() }} | Developed by
         <ULink
           class="inline-block text-primary hover:text-primary-500 hover:ml-1 hover:uppercase hover:underline hover:scale-105 transition-all duration-500 ease-in-out"
           target="_blank"
@@ -88,7 +99,7 @@ const columns = [
     </template>
 
     <template #right>
-      <UButton
+      <!-- <UButton
         to="https://go.nuxt.com/discord"
         target="_blank"
         icon="i-simple-icons-discord"
@@ -111,9 +122,7 @@ const columns = [
         aria-label="Nuxt UI on GitHub"
         color="neutral"
         variant="ghost"
-      />
+      /> -->
     </template>
   </UFooter>
 </template>
-
-function useToast() { throw new Error("Function not implemented.") }

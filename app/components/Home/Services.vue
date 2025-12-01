@@ -25,7 +25,7 @@ const services = [
 </script>
 
 <template>
-  <section class="py-16 bg-gray-50">
+  <section class="py-16 bg-gray-50 dark:bg-transparent">
     <div class="max-w-6xl mx-auto text-center mb-12">
       <h2 class="text-lg font-medium text-primary mb-2">Our Services</h2>
       <h3 class="text-4xl font-semibold">
@@ -49,7 +49,7 @@ const services = [
       <div
         v-for="(service, i) in services"
         :key="i"
-        class="relative group overflow-hidden bg-white shadow-2xl transition-all duration-500"
+        class="relative group overflow-hidden rounded-lg bg-white dark:bg-gray-700 shadow-xl transition-all duration-500"
       >
         <!-- Background accent animation -->
         <div
@@ -61,14 +61,16 @@ const services = [
           class="relative z-10 p-8 text-left space-y-4 transition-colors duration-500 group-hover:text-white"
         >
           <div
-            class="text-accent font-bold text-sm tracking-wide group-hover:text-white"
+            class="text-accent font-bold text-sm tracking-wide group-hover:text-white dark:text-white"
           >
             <UIcon :name="service.icon" class="text-primary w-12 h-12" />
           </div>
           <h4 class="text-xl font-bold text-accent group-hover:text-white">
             {{ service.title }}
           </h4>
-          <p class="text-gray-700 leading-relaxed group-hover:text-gray-100">
+          <p
+            class="text-gray-700 leading-relaxed dark:text-white group-hover:text-gray-100"
+          >
             {{ service.description }}
           </p>
 
